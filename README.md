@@ -6,7 +6,7 @@ Please take your time to thoroughly read through this README. If anything is unc
 
 This test is split into two parts - a backend REST API section, and a frontend section. If you struggle to do the backend section, then please do the frontend section to the best of your ability by either faking/stubbing or not doing any API calls.
 
-We suggest you spend around 60-90 minutes on this in total, and also encourage you to:
+We suggest you spend around 60-90 minutes on this in total, and do as much as you can. Do not worry if you do not finish everything. We also encourage you to:
 
 - Use Google, Stackoverflow, online documentation, ChatGPT as much as you require.
 - Write tests if you think they are beneficial, but only if you think they are within reason of the time limit.
@@ -33,7 +33,9 @@ with the interpolated values populated with that specific customer's (and cat's)
 
 
 ## The setup
-A skeletal backend has already been setting up for you, using TypeScript and NestJS - the language and framework we use at KatKin. There is no frontend setup - you are free to setup one of your own as you choose, either within the same repository or in a different repository.
+A skeletal backend has already been setting up for you, using TypeScript and NestJS - the language and framework we use at KatKin. To run this backend, you can do `yarn start`.
+
+There is no frontend setup - you are free to setup one of your own React-based one as you choose, either within the same repository or in a different repository.
 
 There is a `data.json` file containing user data in this repository, which you should read from in place of a database.
 
@@ -49,8 +51,6 @@ Within this codebase, create an endpoint `/comms/your-next-delivery/<USER-ID>`, 
     "freeGift": <true if the total price exceeds 120 pounds, otherwise false>
 }
 ```
-
-The price
 
 For example, with the following user:
 
@@ -92,22 +92,7 @@ hitting `/comms/your-next-delivery/32d89dce-ff9a-4228-be35-703a360898c3` should 
 }
 ```
 
-To run this backend, you can do `yarn start`.
-
-
-## 2. The Frontend Task
-
-Using React (or your favourite React-based metaframework of choice), create a frontend with just one page - `/welcome/<USER-ID>`, which calls the API endpoint described in the previous step and renders the message in a style similar to the figma file provided [here](https://www.figma.com/design/b6Q7B8dBr6QbdqkhPNoFgD/Untitled?node-id=0-1).
-
-You can:
-  - Create a separate folder/repository to do this if you choose.
-  - Use any libraries/frameworks you want, i.e. Tailwind, styled components (or not - feel free to just use regular styling/CSS as well).
-  - Use any project generators you want (i.e. `create-next-app`, `create-react-app`, `create-vite-app`)
-
-_Note_: We aren't expecting an exact 1-to-1 copy of the design, i.e. exact fonts, spacing, or colors. Just get roughly close enough. __Use any random image of a cat__ that you can find.
-
-
-## Price calculation
+### Price calculation
 
 Cats come in different shapes and sizes. Bigger cats need more food, and vice versa. Our food is delivered in pouches, hence we use the term _pouch size_ to refer to how much food a cat needs. Therefore, every cat in the dataset will have a `pouchSize` attributed to them - between `A` to `F`. Every pouch size will have its own price.
 
@@ -123,6 +108,20 @@ F -> 71.25 GBP
 ```
 
 So for example, if a user had 3 cats, each on pouch size A, B, C, but only the first two cats (on A and B) currently have an active subscription, then their price would be 55.50 + 59.50 = £115.00 pounds.
+
+
+## 2. The Frontend Task
+
+Using React (or your favourite React-based metaframework of choice), create a frontend with just one page - `/welcome/<USER-ID>`, which calls the API endpoint described in the previous step and renders the message in a style similar to the figma file provided [here](https://www.figma.com/design/b6Q7B8dBr6QbdqkhPNoFgD/Untitled?node-id=0-1).
+
+You can:
+  - Create a separate folder/repository to do this if you choose.
+  - Use any libraries/frameworks you want, i.e. Tailwind, styled components (or not - feel free to just use regular styling/CSS as well).
+  - Use any project generators you want (i.e. `create-next-app`, `create-react-app`, `create-vite-app`)
+
+_Note_: We aren't expecting an exact 1-to-1 copy of the design, i.e. exact fonts, spacing, or colors. Just get roughly close enough. __Use any random image of a cat__ that you can find.
+
+
 
 # Submission
 
