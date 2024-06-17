@@ -41,7 +41,7 @@ There is a `data.json` file containing user data in this repository, which you s
 
 ## 1. The Backend Task
 
-Within this codebase, create an endpoint `/comms/your-next-delivery/<USER-ID>`, that looks up the corresponding user's data, and returns a JSON payload of thefollowing shape:
+Within this codebase, create an endpoint `/comms/your-next-delivery/<USER-ID>`, that looks up the corresponding user's data, and returns a JSON payload of the following shape:
 
 ```JSON
 {
@@ -82,7 +82,7 @@ For example, with the following user:
   ]
 }
 ```
-hitting `/comms/your-next-delivery/32d89dce-ff9a-4228-be35-703a360898c3` should return the following body:
+hitting `/comms/your-next-delivery/ff535484-6880-4653-b06e-89983ecf4ed5` should return the following body:
 ```JSON
 {
     "title": "Your next delivery for Dorian and Ocie",
@@ -127,7 +127,7 @@ _Note_: We aren't expecting an exact 1-to-1 copy of the design, i.e. exact fonts
 
 Either:
 
-1. Zip up all your code (please do not include `node_modules`!) and send it via email to tech@katkin.com
-2. Or make your solution publically available in a Git repository(s) and send us the URL(s). You can have a separate frontend/backend repository if you want. Please make sure to name the repository something inconspicuous, i.e, don't put `KatKin` in the name. Do not fork this repository as your solution will be visible to all other candidates.
+1. Make your solution publically available in a Git repository(s) and send us the URL(s). You can have a separate frontend/backend repository if you want. Please make sure to name the repository something inconspicuous, i.e, don't put `KatKin` in the name. Do not fork this repository as your solution will be visible to all other candidates.
+2. Or, if option 1 is unfeasible, zip up all your code (please do not include `node_modules`!) and send it via email to tech@katkin.com
 
 We would also appreciate it if you can write a sentence or two about what you think of this test and/or and how we could improve it.
