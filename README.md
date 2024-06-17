@@ -16,7 +16,7 @@ We suggest you spend around 60-90 minutes on this in total, and do as much as yo
 ## How will we assess your solution?
 
 - Readability and how well-typed your code is
-- The code _must_ compile and run, on Node 18 or later.
+- The code should be written in Typescript and _must_ compile and run, on Node 18 or later.
 - We take into account your previous experience with TypeScript.
 - Don't implement anything unnecessary - i.e. authentication, database, containerization. We won't give additional credit for that.
 
