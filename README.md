@@ -46,11 +46,13 @@ Within this codebase, create an endpoint `/comms/your-next-delivery/<USER-ID>`, 
 ```JSON
 {
     "title": "Your next delivery for <cat names, separated by comma or 'and'>",
-    "message": "Hey <firstName>! In two days' time, we'll be charging you for your next order for <cat names, separated by comma or 'and'>'s fresh food.",
+    "message": "Hey <firstName>! In two days' time, we'll be charging you for your next order for <cat names, formatted as described below>'s fresh food.",
     "totalPrice": <total price, calculated via the formula shown in a later section in this README>,
     "freeGift": <true if the total price exceeds 120 pounds, otherwise false>
 }
 ```
+
+Cat names should be formatted in a grammatically correct manner, i.e. just `A` if there's a single cat named A, `A and B` if there's two cats, `A, B and C` if there's three or more cats.
 
 For example, with the following user:
 
