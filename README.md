@@ -6,7 +6,7 @@ Please take your time to thoroughly read through this README. If anything is unc
 
 This test is split into two parts - a backend REST API section, and a frontend section. If you struggle to finish the backend section, then please do the frontend section to the best of your ability by either faking/stubbing or not doing any API calls.
 
-Do not worry if you do not finish everything. If in doubt, error on the side of quality.
+Do not worry if you do not finish everything. If in doubt, err on the side of quality.
 
 We also encourage you to:
 
