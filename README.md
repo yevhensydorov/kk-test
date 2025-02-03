@@ -21,7 +21,7 @@ We also encourage you to:
 - The code should be written in Typescript and _must_ compile and run, on Node 18 or later.
 - We take into account your previous experience with TypeScript.
 - Don't implement anything unnecessary - i.e. authentication, database, containerization. We won't give additional credit for that.
-- 
+
 ## Description
  As a highly personalised service, communications to our customers must be tailored purr-fectly and personalised to each and every customer. As we have multiple channels of communications (i.e. emails, SMS, landing pages), we like to keep the templating logic for this channel-agnostic and in a dedicated REST API service.
 
