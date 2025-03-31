@@ -1,6 +1,5 @@
-import { Controller, Get, Param, ValidationPipe } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from './app.service';
-import { DeliveryParamsDto } from './dto/delivery.dto';
 
 @Controller()
 export class AppController {
@@ -12,7 +11,7 @@ export class AppController {
   }
 
   @Get('comms/your-next-delivery/:userId')
-  getNextDelivery(@Param(ValidationPipe) params: DeliveryParamsDto) {
-    return this.appService.getNextDeliveryMessage(params.userId);
+  getNextDelivery(@Param('userId') userId: string) {
+    return this.appService.getNextDeliveryMessage(userId);
   }
 }

@@ -1,10 +1,16 @@
 import { Injectable } from '@nestjs/common';
 import { User } from '../dto/welcome-fresh.dto';
+import { MessageResponseDto } from '../dto/message.dto';
 import { StringUtils } from '../utils/string.utils';
 
 @Injectable()
 export class MessageService {
-  generateDeliveryMessage(user: User, activeCatNames: string[], totalPrice: number, hasFreeGift: boolean) {
+  generateDeliveryMessage(
+    user: User,
+    activeCatNames: string[],
+    totalPrice: number,
+    hasFreeGift: boolean,
+  ): MessageResponseDto {
     const formattedCatNames = StringUtils.formatNames(activeCatNames);
     
     return {

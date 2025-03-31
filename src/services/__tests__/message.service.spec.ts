@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { MessageService } from '../message.service';
 import { User } from '../../dto/welcome-fresh.dto';
-import { StringUtils } from '../../utils/string.utils';
 
 describe('MessageService', () => {
   let messageService: MessageService;

@@ -30,7 +30,6 @@ describe('PriceService', () => {
         { name: 'Dorian', pouchSize: 'C', subscriptionActive: true, breed: 'Thai' },
         { name: 'Ocie', pouchSize: 'F', subscriptionActive: true, breed: 'Somali' }
       ];
-      // C = 62.75, F = 71.25
       expect(priceService.calculateTotalPrice(cats)).toBe(134.00);
     });
 

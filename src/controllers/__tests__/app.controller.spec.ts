@@ -5,7 +5,6 @@ import { DataService } from '../../services/data.service';
 import { PriceService } from '../../services/price.service';
 import { MessageService } from '../../services/message.service';
 import { ValidationPipe, ValidationError } from '@nestjs/common';
-import { DeliveryParamsDto } from '../../dto/delivery.dto';
 
 describe('AppController', () => {
   let appController: AppController;
@@ -40,8 +39,8 @@ describe('AppController', () => {
 
   describe('getNextDelivery', () => {
     it('should return delivery message for valid user ID', () => {
-      const params = { userId: 'ff535484-6880-4653-b06e-89983ecf4ed5' };
-      const result = appController.getNextDelivery(params);
+      const param = 'ff535484-6880-4653-b06e-89983ecf4ed5';
+      const result = appController.getNextDelivery(param);
       
       expect(result).toEqual({
         title: 'Your next delivery for Dorian and Ocie',
@@ -52,15 +51,13 @@ describe('AppController', () => {
     });
 
     it('should throw NotFoundException for non-existent user ID', () => {
-      const params = { userId: 'ff535484-6880-4653-b06e-89983ecf4ed6' };
-      expect(() => appController.getNextDelivery(params)).toThrow('User with ID ff535484-6880-4653-b06e-89983ecf4ed6 not found');
+      const param = 'ff535484-6880-4653-b06e-89983ecf4ed6';
+      expect(() => appController.getNextDelivery(param)).toThrow('User with ID ff535484-6880-4653-b06e-89983ecf4ed6 not found');
     });
 
     it('should throw BadRequestException for invalid UUID format', async () => {
-      const params = { userId: 'invalid-id' };
-      await expect(validationPipe.transform(params, { type: 'param', metatype: DeliveryParamsDto }))
-        .rejects
-        .toThrow('Invalid user ID format. Must be a valid UUID v4.');
+      const params = 'invalid-id';
+      expect(() => appController.getNextDelivery(params)).toThrow('Invalid user ID format. Must be a valid UUID v4.');
     });
   });
 });
