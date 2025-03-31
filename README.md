@@ -135,6 +135,8 @@ A full-stack application that notifies users about their upcoming cat food deliv
 
 ### Prerequisites
 - Node.js
+  - Backend: ^18.13.0 || >=20.9.0
+  - Frontend: >=20.0.0
 - yarn
 - TypeScript
 
@@ -171,6 +173,7 @@ A full-stack application that notifies users about their upcoming cat food deliv
    ```
    http://localhost:5173/welcome/ff535484-6880-4653-b06e-89983ecf4ed5
    ```
+   Also, the app has page not found message, so user will be asked to go to the correct URL.
 
 ### Testing
 - Backend tests: `yarn test`
