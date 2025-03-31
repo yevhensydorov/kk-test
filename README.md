@@ -211,7 +211,7 @@ To make the test even more comprehensive, here are some suggested additions:
    - Code splitting and lazy loading
 
 
-## Future Improvements
+## Future Improvements of the current implementation
 
 If given more time, here are several areas where the application could be enhanced:
 
