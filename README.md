@@ -178,6 +178,39 @@ A full-stack application that notifies users about their upcoming cat food deliv
 ### Testing
 - Backend tests: `yarn test`
 
+## Test Evaluation
+
+This coding test provides a well-balanced assessment of full-stack development skills, covering essential aspects like:
+- Error handling and validation
+- Responsive design implementation
+- Data flow
+- API integration
+- Type safety with TypeScript
+
+### Potential Improvements for Future Tests
+
+To make the test even more comprehensive, here are some suggested additions:
+
+1. **Business Logic Complexity**
+   - Complex pricing rules and discounts
+   - Multiple delivery options and preferences
+
+2. **State Management**
+   - Implementation of Redux, Zustand, or similar if we have more pages, routes, cart
+   - Complex data flow scenarios
+   - State persistence requirements
+
+3. **Form Handling**
+   - Implementation of the "Edit delivery" feature
+   - Form validation and error handling
+   - Complex form state management
+
+4. **Performance Optimization**
+   - API response caching
+   - Image optimization
+   - Code splitting and lazy loading
+
+
 ## Future Improvements
 
 If given more time, here are several areas where the application could be enhanced:
