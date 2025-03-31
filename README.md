@@ -139,29 +139,35 @@ A full-stack application that notifies users about their upcoming cat food deliv
 - TypeScript
 
 ### Setup
-1. Install backend dependencies:
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:yevhensydorov/kk-test.git
+   cd kk-test
+   ```
+
+2. Install backend dependencies:
    ```bash
    yarn
    ```
 
-2. Install frontend dependencies:
+3. Install frontend dependencies:
    ```bash
    cd front-end
    yarn
    ```
 
-3. Start the backend (runs on http://localhost:3000):
+4. Start the backend (runs on http://localhost:3000):
    ```bash
    yarn start:dev
    ```
 
-4. Start the frontend (runs on http://localhost:5173):
+5. Start the frontend (runs on http://localhost:5173):
    ```bash
    cd front-end
    yarn dev
    ```
 
-5. To view the delivery message front end, visit:
+6. To view the delivery message front end, visit:
    ```
    http://localhost:5173/welcome/ff535484-6880-4653-b06e-89983ecf4ed5
    ```
