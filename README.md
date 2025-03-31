@@ -161,6 +161,11 @@ A full-stack application that notifies users about their upcoming cat food deliv
    yarn dev
    ```
 
+5. To view the delivery message front end, visit:
+   ```
+   http://localhost:5173/welcome/ff535484-6880-4653-b06e-89983ecf4ed5
+   ```
+
 ### Testing
 - Backend tests: `yarn test`
 
