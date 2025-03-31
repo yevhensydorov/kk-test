@@ -137,7 +137,7 @@ A full-stack application that notifies users about their upcoming cat food deliv
 - Node.js
   - Backend: ^18.13.0 || >=20.9.0
   - Frontend: >=20.0.0
-- yarn
+- yarn installed 
 - TypeScript
 
 ### Setup
